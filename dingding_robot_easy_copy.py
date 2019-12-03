@@ -3,9 +3,7 @@
 
 import requests
 # from tabulate import tabulate
-
 # from manage.dingding import _param_check
-
 
 class DingDing(object):
     def __init__(self, api_url):
@@ -89,10 +87,10 @@ class DingDing(object):
 
 if __name__ == "__main__":
     # Webhook_url = open('url.txt').read().strip()
-    Webhook_url = 'https://oapi.dingtalk.com/robot/send?access_token=0bf6550d4c19da8f990917748b1e3047e4cb25c3dc43021046733acdbc6eee4c'
+    Webhook_url = 'https://oapi.dingtalk.com/robot/send?access_token=your_token'
     dd = DingDing(Webhook_url)
 
-    text = 'Hi,大家别忘了填报工时哈～!'
+    text = 'Hello World'
 
     print(text)
     dd.send_text(text, True)
